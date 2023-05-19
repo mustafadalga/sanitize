@@ -1,0 +1,60 @@
+{
+  "name": "v-sanitize-directive",
+  "description": "A utility library providing input sanitization using dompurify and Vue.js.",
+  "version": "0.0.7",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/sanitize.umd.cjs",
+  "module": "./dist/sanitize.js",
+  "exports": {
+    ".": {
+      "import": "./dist/sanitize.js",
+      "require": "./dist/sanitize.umd.cjs"
+    }
+  },
+  "private": false,
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check build-only",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --declaration --emitDeclarationOnly"
+  },
+  "dependencies": {
+    "dompurify": "^3.0.3",
+    "vue": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.21.5",
+    "@tsconfig/node18": "^2.0.1",
+    "@types/dompurify": "^3.0.2",
+    "@types/node": "^18.16.8",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/tsconfig": "^0.4.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "~5.0.4",
+    "vite": "^4.3.5",
+    "vue-tsc": "^1.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mustafadalga/sanitize"
+  },
+  "author": "Mustafa Dalga",
+  "license": "GPL-3.0",
+  "keywords": [
+    "sanitize",
+    "input",
+    "security",
+    "vue",
+    "vue3",
+    "vue-composition-api",
+    "dompurify",
+    "xss",
+    "cross-site-scripting",
+    "frontend"
+  ]
+}
