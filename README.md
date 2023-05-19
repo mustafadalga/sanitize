@@ -132,7 +132,7 @@ export default {
 ```
 
 ## Demo
-* https://sanitize.netlify.app/
+* https://sanitize-input.netlify.app/
 
 ## License
 [![License](https://img.shields.io/badge/LICENSE-GPL--3.0-orange)](https://github.com/mustafadalga/sanitize/blob/main/LICENSE)
