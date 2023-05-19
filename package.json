@@ -3,28 +3,16 @@
   "description": "A utility library providing input sanitization using dompurify and Vue.js.",
   "version": "0.0.8",
   "type": "module",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/sanitize.umd.cjs",
-  "module": "./dist/sanitize.js",
-  "exports": {
-    ".": {
-      "import": "./dist/sanitize.js",
-      "require": "./dist/sanitize.umd.cjs"
-    }
-  },
   "private": false,
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
     "build-only": "vite build",
-    "type-check": "vue-tsc --declaration --emitDeclarationOnly"
+    "type-check": "vue-tsc --noEmit --composite false"
   },
   "dependencies": {
-    "dompurify": "^3.0.3",
+    "v-sanitize-directive": "^0.0.8",
     "vue": "^3.3.2"
   },
   "devDependencies": {
