@@ -1,7 +1,7 @@
 {
   "name": "v-sanitize-directive",
   "description": "A utility library providing input sanitization using dompurify and Vue.js.",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "types": "./dist/index.d.ts",
   "files": [
